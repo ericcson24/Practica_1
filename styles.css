@@ -1,0 +1,176 @@
+/* Reseteo */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: #ffffff;
+  padding: 20px;
+}
+
+/* --------------------------------------------------------------------------------------------------------------*/
+
+/* Estilos para la cabecera */
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.profile-info {
+  max-width: 60%;
+}
+
+.profile-info h1 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.profile-description {
+  font-size: 16px;
+  color: #333;
+}
+
+.location {
+  font-size: 14px;
+  color: gray;
+}
+
+/* Iconos sociales */
+.social-links {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.social-links a img {
+  width: 30px;
+  height: 30px;
+}
+
+
+/* Imagen de perfil */
+.profile-pic {
+  width: 110px;
+  height: 150px;
+  border-radius: 2%;
+  border: 2px solid  #a09e9e;
+}
+
+/* --------------------------------------------------------------------------------------------------------------*/
+
+/* Estilos para la sección de sobre mi */
+.sobremi {
+  margin-top: 20px;
+  padding: 15px;
+ 
+}
+
+.sobremi h2 {
+  font-size: 25px;
+
+}
+.sobremi-description{
+  font-size: 15px;
+}
+
+/* --------------------------------------------------------------------------------------------------------------*/
+
+/* Estilos para la sección de Experiencia */
+.experiencia {
+  margin-top: 10px;
+  padding: 15px;
+}
+
+.experience-header {
+  display: flex;
+  align-items: center;
+}
+
+.experiencia-info h2 {
+  margin-bottom: 5px;
+}
+.experiencia-info h3 {
+  margin-bottom: 5px;
+}
+
+.experiencia-item {
+  padding: 10px;
+  margin: 10px;
+  font-family: nconsolata,
+}
+
+.cargo {
+  font-size: 16px;
+  color: #555;
+  font-style: italic;
+}
+
+.period {
+  font-size: 16px;
+  color: #666;
+  white-space: nowrap; 
+  margin-left: auto; 
+}
+
+/* --------------------------------------------------------------------------------------------------------------*/
+
+/* Estilos para la sección de Formación */
+.Formacion {
+  margin-top: 20px;
+  padding: 15px;
+  
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.Formacion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.Formacion-header h2 {
+  font-size: 24px;
+ 
+  margin: 0;
+}
+
+/* Botón para mostrar más información */
+.Formacion-header button {
+  color: #333;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  
+}
+
+.Formacion-content {
+  padding: 10px;
+  margin-top: 10px;
+  min-height: 50px; 
+}
+
+.Formacion-content p {
+  font-size: 16px;
+  color: #333;
+}

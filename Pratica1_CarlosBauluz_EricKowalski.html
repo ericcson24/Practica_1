@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Portfolio Digital</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<!------------------------------------------------------------------------------------------------------------------>
+
+<body>
+
+  <div class="container">
+
+    <!-- Cabecera -->
+    <header class="profile-header">
+      <div class="profile-info">
+        <h1>Nataly Guzman</h1>
+        <p class="profile-description">
+          Creadora de Contenido de Programación
+        </p>
+        <p class="location">📍 Kazajistán</p>
+        <div class="social-links">
+          <a href="https://mail.google.com/mail/u/0/?hl=es#inbox" target="_blank"> 
+            <img src="https://cdn.pixabay.com/photo/2017/11/10/04/47/letter-2935365__340.png" alt="Email">
+          </a>
+          <a href="https://es.linkedin.com/" target="_blank">
+            <img src="https://cdn.pixabay.com/photo/2017/11/10/05/05/linkedin-2935407__340.png" alt="LinkedIn">
+          </a>
+          <a href="https://es-es.facebook.com/" target="_blank">
+            <img src="https://cdn.pixabay.com/photo/2017/11/10/05/04/facebook-2935402__340.png" alt="Facebook">
+          </a>
+          <a href="https://www.instagram.com/" target="_blank">
+            <img src="https://cdn.pixabay.com/photo/2017/11/10/05/04/instagram-2935404__340.png" alt="Instagram">
+          </a>
+        </div>
+      </div>
+      <div class="profile-img">
+        <img class="profile-pic" src="https://www.okchicas.com/wp-content/uploads/2018/01/Poses-para-una-buena-foto-de-perfil-11.jpg" alt="Foto de perfil">
+      </div>
+    </header>
+
+    <!------------------------------------------------------------------------------------------------------------------>
+
+    <!-- Sobre mí -->
+    <section class="sobremi">
+      <div class="sobremi-info">
+        <h2>Sobre mí</h2>
+        <p class="sobremi-description">
+          ¡Hola! Bienvenido a mi portfolio digital. Soy un apasionado de la programación 
+          y el desarrollo web. Me encanta aprender nuevas tecnologías y compartir 
+          conocimientos con otros desarrolladores.
+        </p>
+      </div>
+    </section>
+
+    <!------------------------------------------------------------------------------------------------------------------>
+
+    <!-- Experiencia Laboral -->
+    <section class="experiencia">
+      <div class="experiencia-info">
+        <h2>Experiencia Laboral</h2>
+
+        <div class="experiencia-item">
+          <div class="experience-header">
+            <div class="experience-details">
+              <h3>midudev</h3>
+              <p class="cargo">Divulgador sobre Programación Web</p>
+            </div>
+            <div class="period">2021 - Actual</div>
+          </div>
+          <p>
+            Streamer de programación más visto en Español en Twitch. +1 millón de seguidores 
+            entre todas mis redes sociales. Reconocido por Google, Microsoft y GitHub por mi 
+            impacto en la comunidad de desarrolladores.
+          </p>
+        </div>
+
+        <div class="experiencia-item">
+          <div class="experience-header">
+            <div class="experience-details">
+              <h3>Diseñador UI/UX</h3>
+              <p class="cargo">Estudio Creativo Y</p>
+            </div>
+            <div class="period">2019 - 2021</div>
+          </div>
+          <p>
+            Creación de diseños interactivos y optimizados para la experiencia de usuario. 
+            Colaboración con equipos de marketing y desarrollo.
+          </p>
+        </div>
+
+        <div class="experiencia-item">
+          <div class="experience-header">
+            <div class="experience-details">
+              <h3>Analista de Sistemas</h3>
+              <p class="cargo">Compañía Z</p>
+            </div>
+            <div class="period">2017 - 2019</div>
+          </div>
+          <p>
+            Análisis de requerimientos y diseño de soluciones tecnológicas. Gestión de 
+            bases de datos y servidores para asegurar el correcto funcionamiento de 
+            diferentes aplicaciones internas.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!------------------------------------------------------------------------------------------------------------------>
+    
+    <!-- Formación con botón "Mostrar más" -->
+    <section class="Formacion">
+      <div class="Formacion-header">
+        <h2>Formación</h2>
+        <button onclick="boton_formacion()">Mostrar más</button>
+      </div>
+      <div class="Formacion-content" id="FormacionContent">
+        <div class="experiencia-item">
+          <div class="experience-header">
+            <div class="experience-details">
+              <h3 id="formacion_titulo" style="display: none;">Máster en Desarrollo Web</h3>
+              <p class="cargo" id="formacion_universidad" style="display: none;">Universidad XYZ</p>
+            </div>
+            <div class="period" id="formacion_fecha" style="display: none;">2023 - Actual</div>
+          </div>
+          <p id="formacion_actual"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Script botón "Mostrar más" -->
+
+    <script>
+      function boton_formacion() {
+        document.getElementById("formacion_actual").innerHTML = 
+          "Actualmente cursando un Máster en Desarrollo Web, donde estoy profundizando en metodologías ágiles, arquitectura de software y las últimas tecnologías de frontend y backend.";
+        document.getElementById("formacion_titulo").style.display = "block";
+        document.getElementById("formacion_universidad").style.display = "block";
+        document.getElementById("formacion_fecha").style.display = "block";
+      }
+    </script>
+
+  </body>
+
+</html>
+
+
+
